@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- postbook -->
+
+    <div class="post-container">
+      <div class="post-box" id="postBox">
+        <span>Create Posts</span>
+        <div class="hr"></div>
+        <div class="flex">
+          <div>
+            <img src="images/userpicture.webp" id="userPicture" />
+          </div>
+          <div>
+            <h1 id="changedName">Danish</h1>
+            <div class="flex friends">
+              <img src="images/friends.png" />
+              <p>Friends</p>
+              <img src="images/dropDown.png" />
+            </div>
+          </div>
+        </div>
+        <input
+          type="text"
+          id="display"
+          placeholder="What's on your mind?"
+          onkeypress="changeColors(event)"
+        />
+        <div id="bgPicture" class="bgPicture">
+          <img src="images/bg11.png" onclick="changeBG(event)" />
+          <img src="images/bg2.png" onclick="changeBG(event)" />
+          <img src="images/bg3.png" onclick="changeBG(event)" />
+          <img src="images/bg4.png" onclick="changeBG(event)" />
+          <img src="images/bg5.png" onclick="changeBG(event)" />
+          <img src="images/bg6.png" onclick="changeBG(event)" />
+          <img src="images/bg7.png" onclick="changeBG(event)" />
+          <img src="images/bg8.png" onclick="changeBG(event)" />
+        </div>
+        <button class="btn-post" onclick="posted()">Post</button>
+      </div>
+      <div id="postUpdate"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

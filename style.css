@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.signup-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #f0f2f5;
+  display: none;
+}
+.signup-box {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.signup-left {
+  width: 50%;
+  height: 400px;
+  font-size: 2em;
+
+  color: #1c1e21;
+}
+
+.signup-left > h1 {
+  color: #1877f2;
+}
+
+#userImage {
+  width: 80px;
+  width: 120px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.btn-img {
+  background-color: #cad1e2;
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.center {
+  height: 35px;
+}
+#files {
+  visibility: hidden;
+}
+
+.signup-right {
+  padding: 10px;
+
+  width: 50%;
+  text-align: center;
+}
+.signup-right > div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.signup-right input {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+  font-size: 1.2em;
+}
+.signup-right input:focus {
+  box-shadow: 1px 1px 5px #3b89f0;
+  outline-color: #1877f2;
+}
+
+.signup-right p {
+  color: #1877f2;
+  margin-bottom: 25px;
+}
+.signup-btn-blue {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 90%;
+  color: #fff;
+  font-weight: 600;
+  margin: 25px auto;
+  cursor: pointer;
+}
+.signup-btn-green {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+hr {
+  margin-bottom: 25px;
+}
+
+.post-container {
+  width: 100%;
+  background-color: #f0f2f5;
+  height: auto;
+  position: absolute;
+}
+
+#postBox {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEf5kLdSsLzEyHwLNAMqXZSkwkhdJfl6d5SwZUFI_KciEzvQdddC4tU3OS3nLWWLlS5xo&usqp=CAU"); /* Replace with your image URL */
+  background-size: cover; /* This will make sure the image covers the whole container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Don't repeat the image */
+}
+.post-box {
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  margin: 7% auto 3%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+.post-box > span {
+  font-family: "myFontBold";
+  font-size: 1.2em;
+  color: white;
+}
+.hr {
+  width: 100%;
+  background-color: #dddfe2;
+  height: 1px;
+  margin: 10px 0;
+}
+#userPicture {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.friends {
+  font-size: 14px;
+  font-family: "myFontRegular";
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #e4e6eb;
+  position: sticky;
+}
+.friends img {
+  width: 12px;
+  height: 12px;
+  justify-content: center;
+  margin: 0 5px;
+}
+#changedName {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  color: white;
+}
+.flex > div {
+  text-align: left;
+}
+#display {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  margin: 10px 0;
+  height: 150px;
+  padding: 0 10px 50px 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  white-space: normal;
+}
+.bgPicture {
+  position: relative;
+  top: 2%;
+}
+.bgPicture img {
+  width: 40px;
+  height: 40px;
+  margin: 0 2.5px;
+  border-radius: 10px;
+}
+.btn-post {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  /* color: #bfc3c7; */
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#postUpdate {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f0f2f5;
+}
+#postUpdate > div {
+  width: 500px;
+  height: 400px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 10px auto;
+  border: 1px solid orange;
+}
